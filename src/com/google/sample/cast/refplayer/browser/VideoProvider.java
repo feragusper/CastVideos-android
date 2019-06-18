@@ -186,6 +186,31 @@ public class VideoProvider {
         movieMetadata.putString(MediaMetadata.KEY_TITLE, title);
         movieMetadata.addImage(new WebImage(Uri.parse(imgUrl)));
         movieMetadata.addImage(new WebImage(Uri.parse(bigImageUrl)));
+        movieMetadata.putString("scotty.metadata.CUSTOM_DATA", "{  \n" +
+                "   \"analyticsParams\":{  \n" +
+                "      \"collectionPosition\":\"\",\n" +
+                "      \"collectionTitle\":\"Spotlight\",\n" +
+                "      \"parentPageName\":{  \n" +
+                "         \"type\":{  \n" +
+                "            \"value\":\"Home\"\n" +
+                "         }\n" +
+                "      },\n" +
+                "      \"videoInitiateType\":{  \n" +
+                "         \"buttonText\":\"Watch Now\",\n" +
+                "         \"which\":{  \n" +
+                "            \"buttonText\":\"Watch Now\"\n" +
+                "         }\n" +
+                "      }\n" +
+                "   },\n" +
+                "   \"imaAd\":{  \n" +
+                "\"contentSourceId\":\"2481719\",\n" +
+                "\"inventoryUnit\":\"/8264/vaw-can/mobile_app/smithsonianchannel_android_tablet_app\",\n" +
+                "      \"videoId\":\"34920\"\n" +
+                "   },\n" +
+                "   \"playbackSessionExecuted\": true,\n" +
+                "   \"videoId\":\"8a4f40aa6ae44f1db25a35121cb173fe\",\n" +
+                "   \"streamURL4KTV\": \"...\"\n" +
+                "}\n");
         JSONObject jsonObj = null;
         try {
             jsonObj = new JSONObject();
